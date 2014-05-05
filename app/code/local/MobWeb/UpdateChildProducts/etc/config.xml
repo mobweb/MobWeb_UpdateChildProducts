@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MobWeb_UpdateChildProducts>
+            <version>0.1.0</version>
+        </MobWeb_UpdateChildProducts>
+    </modules>
+    <global>
+        <models>
+            <MobWeb_UpdateChildProducts>
+                <class>MobWeb_UpdateChildProducts_Model</class>
+            </MobWeb_UpdateChildProducts>
+        </models>
+        <helpers>
+            <MobWeb_UpdateChildProducts>
+                <class>MobWeb_UpdateChildProducts_Helper</class>
+            </MobWeb_UpdateChildProducts>
+        </helpers>
+        <events>
+            <catalog_product_save_after>
+                <observers>
+                    <MobWeb_UpdateChildProducts>
+                        <type>singleton</type>
+                        <class>MobWeb_UpdateChildProducts/observer</class>
+                        <method>catalogProductSaveAfter</method>
+                    </MobWeb_UpdateChildProducts>
+                </observers>
+            </catalog_product_save_after>
+        </events>
+    </global>
+</config>

@@ -1,0 +1,6 @@
+app/code/local/MobWeb/UpdateChildProducts app/code/local/MobWeb/UpdateChildProducts/
+
+app/etc/modules/MobWeb_UpdateChildProducts.xml app/etc/modules/MobWeb_UpdateChildProducts.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"
